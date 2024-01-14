@@ -4,4 +4,8 @@
 objective: implement foundational data structures and algorithms stack at lower levels.
 the intention is to attain a deeper understanding of these concepts at an implementation level.
 
+## setup instructions:
+1. install `python 3.11` or higher.
+    - Python download: https://www.python.org/downloads/
+    
 theory: https://github.com/praisetompane/computation/tree/master/0_theory_of_computation/3_design_and_analysis_of_algorithms
