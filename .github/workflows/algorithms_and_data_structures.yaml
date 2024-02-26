@@ -18,16 +18,17 @@ jobs:
         make -C array/
     - name: build_linkedlist
       run: |
-        
+        make -C linkedlist/
          
   test:
     runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v2
+    - name: create_lib_out_put
+      run: mkdir -p lib/
     - name: test_memory_allocator
       run: |
-        
         make -C memory_cell/ test-program
         echo "Running tests"
         memory_cell/test-program
@@ -36,13 +37,11 @@ jobs:
         echo "MISSING TESTS!!!"
     - name: test_array
       run: |
-        
         make -C array/ test-program
         echo "Running tests"
         array/test-program
     - name: test_linkedlist
       run: |
-        
         make -C linkedlist/ test-program
         echo "Running tests"
         linkedlist/test-program
