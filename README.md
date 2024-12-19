@@ -1,13 +1,13 @@
 # algorithms_and_data_structures
-![build status](https://github.com/praisetompane/algorithms_and_data_structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
-
-- objective: 
-    - implement barebones foundational data structures and algorithms at lower levels of the stack.
-    - aquire a deeper understanding of these constructs at an implementation level.
+![build status](https://github.com/praise-toy-applications/algorithms-and-data-structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
 
 
-## theory: 
-- [link to the theory](https://github.com/praisetompane/computer_science/tree/main/0_foundations/0_theory_of_computation/3_design_and_analysis_of_algorithms)
+## objectives
+- implement barebones foundational data structures and algorithms at lower levels of the stack.
+- aquire a deeper understanding of these constructs at an implementation level.
+
+## theory 
+- [link to the theory](https://github.com/praisetompane/computer_and_information/tree/main/0_foundations/0_theory_of_computation/3_design_and_analysis_of_algorithms)
 
 ## project structure:
 - docs: project documentation lives in here.
