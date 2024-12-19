@@ -50,3 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+<<<<<<< HEAD
+=======
+
+
+lib/
+
+test-program
+>>>>>>> 7cec222 (feat: add dev containers)
