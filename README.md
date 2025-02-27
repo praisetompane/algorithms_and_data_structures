@@ -1,52 +1,53 @@
 # algorithms_and_data_structures
 ![build status](https://github.com/praise-toy-applications/algorithms-and-data-structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
 
+## Objectives
+- Implement barebones foundational data structures and algorithms at lower levels of the stack.
 
-## objectives
-- implement barebones foundational data structures and algorithms at lower levels of the stack.
-- aquire a deeper understanding of these constructs at an implementation level.
+## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms)
 
-## theory 
-- [link to the theory](https://github.com/praisetompane/computer_and_information/tree/main/0_foundations/0_theory_of_computation/3_design_and_analysis_of_algorithms)
-
-## project structure:
+## Project Structure
 - docs: project documentation lives in here.
-- each datastructure is an independent module.
+- each data structure is an independent module.
     - example:
         - array
         - linkedlist
         - ...
 
-## setup instructions:
-- install `gcc` or higher.
-    - [gcc download](https://gcc.gnu.org/install/index.html)
+## Dependencies
+- [gcc](https://gcc.gnu.org/install/index.html)
 
-- clone repo: 
+## Setup Instructions
+- Install [Docker](https://docs.docker.com/get-started/)
+- The repository is configured to use [devcontainers](https://containers.dev) for development.
+    - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+
+### Clone Repository 
 ```shell
 git clone git@github.com:praisetompane/algorithms_and_data_structures.git
 ```
 
-## build:
-```shell
-make build
-```
-
-## testing:
-### run tests:
-```shell
-make test
-```
-## install:
+### Install
 ```
 sudo make install
 ```
 
-## uninstall:
+### uninstall:
 ```
 sudo make uninstall
 ```
 
-## usage:
+## Build
+```shell
+make build
+```
+
+## Test
+```shell
+make test
+```
+
+## Usage
 ```C
 #include "array.h"
 #include <stdio.h>
@@ -68,7 +69,7 @@ int main()
     
 }
 ```
-## git conventions:
+## Git Conventions
 - **NB:** the master is locked and all changes must come through a Pull Request.
 - commit messages:
     - provide concise commit messages that describe what you have done.

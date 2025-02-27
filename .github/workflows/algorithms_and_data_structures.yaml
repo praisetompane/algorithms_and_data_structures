@@ -1,6 +1,10 @@
 name: algorithms_and_data_structures
 
-on: [push]
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
   
 jobs:
   build:
