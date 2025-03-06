@@ -57,4 +57,9 @@ dkms.conf
 lib/
 
 test-program
+<<<<<<< HEAD
 >>>>>>> 7cec222 (feat: add dev containers)
+=======
+.DS_Store
+.vscode
+>>>>>>> ac3ad98 (docs: clean up)

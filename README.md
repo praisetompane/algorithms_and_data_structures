@@ -1,8 +1,9 @@
-# algorithms_and_data_structures
-![build status](https://github.com/praise-toy-applications/algorithms-and-data-structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
+# data_structures
+![build status](https://github.com/praisetompane/data_structures/actions/workflows/data_structures.yaml/badge.svg)
 
 ## Objectives
-- Implement barebones foundational data structures and algorithms at lower levels of the stack.
+- Implement barebones foundational data structures at a lower level of the stack.
+- Aquire a deeper understanding of these constructs at an this implementation level.
 
 ## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms)
 
@@ -22,7 +23,11 @@
 - The repository is configured to use [devcontainers](https://containers.dev) for development.
     - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 
+<<<<<<< HEAD
 ### Clone Repository 
+=======
+#### Clone Repository
+>>>>>>> ac3ad98 (docs: clean up)
 ```shell
 git clone git@github.com:praisetompane/algorithms_and_data_structures.git
 ```
@@ -58,7 +63,7 @@ int main()
     printf("Test creating, adding and reading from Integer array\n");
     array numbers = new (INT, 10);
     assert(numbers.length == 0);
-    
+
     int number = 2;
     add(&numbers, 0, &number);
 
@@ -66,7 +71,7 @@ int main()
     read(&numbers, 0, &read_int);
     assert(read_int == number);
     printf("\n");
-    
+
 }
 ```
 ## Git Conventions
@@ -78,6 +83,6 @@ int main()
         git commit -m "feat(core): algorithm" -m"implement my new shiny faster algorithm"
         ```
     - screen shot of Githb view
-    - references: 
+    - references:
         - https://www.conventionalcommits.org/en/v1.0.0/
         - https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/
