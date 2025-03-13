@@ -5,8 +5,8 @@
 #define MEMORY_ALLOCATOR_H
 
 /*
-    allocate memory of specified size and retrn pointer to first byte
-        @size = size of memory
+    allocate memory of specified size and return pointer to first byte
+        @size = size of memory in bytes
 */
 void *allocate_memory(int size);
 

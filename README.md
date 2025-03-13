@@ -2,55 +2,54 @@
 ![build status](https://github.com/praisetompane/data_structures/actions/workflows/data_structures.yaml/badge.svg)
 
 ## Objectives
-- Implement barebones foundational data structures at a lower level of the stack.
-- Aquire a deeper understanding of these constructs at an this implementation level.
+- Reimplementation of foundational data structures at a lower level of the stack.
+- Educational project to aquire a deeper understanding of these constructs.
 
-## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms)
+## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms/0_data_structures_design_and_analysis)
 
 ## Project Structure
 - docs: project documentation lives in here.
 - each data structure is an independent module.
     - example:
-        - array
-        - linkedlist
+        - [array](./array/array.h)
+        - [linkedlist](./linkedlist/linkedlist.h)
         - ...
 
 ## Dependencies
-- [gcc](https://gcc.gnu.org/install/index.html)
+- [Docker](https://docs.docker.com/get-started/)
 
 ## Setup Instructions
-- Install [Docker](https://docs.docker.com/get-started/)
 - The repository is configured to use [devcontainers](https://containers.dev) for development.
     - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 
-<<<<<<< HEAD
-### Clone Repository 
-=======
+
+## Installation
+
 #### Clone Repository
->>>>>>> ac3ad98 (docs: clean up)
 ```shell
-git clone git@github.com:praisetompane/algorithms_and_data_structures.git
+git clone git@github.com:praisetompane/data_structures.git
 ```
 
-### Install
-```
-sudo make install
-```
-
-### uninstall:
-```
-sudo make uninstall
-```
-
-## Build
+#### Build
 ```shell
 make build
 ```
 
-## Test
+#### Test
 ```shell
 make test
 ```
+
+#### Execute Installation Script 
+```
+sudo make install
+```
+
+## Uninstall
+```
+sudo make uninstall
+```
+
 
 ## Usage
 ```C
@@ -74,6 +73,7 @@ int main()
 
 }
 ```
+
 ## Git Conventions
 - **NB:** the master is locked and all changes must come through a Pull Request.
 - commit messages:

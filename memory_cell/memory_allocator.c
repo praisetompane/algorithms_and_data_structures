@@ -7,7 +7,7 @@ void *allocate_memory(int size)
         return first_address;
     else
     {
-        printf("Failed to allocate memory for the array");
+        printf("Failed to allocate the requested memory.");
         exit(1);
     }
 }

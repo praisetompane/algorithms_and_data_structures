@@ -1,6 +1,6 @@
 {
-	"name": "algorithms_and_data_structures",
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+	"name": "data_structures",
+	"image": "mcr.microsoft.com/vscode/devcontainers/cpp",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -14,5 +14,7 @@
 			],
 			"settings": {}
 		}
-	}
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/data_structures,type=bind,consistency=delegated",
+	"workspaceFolder": "/data_structures"
 }
