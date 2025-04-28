@@ -1,20 +1,20 @@
 build:
 	mkdir -p lib/
 	make -C memory_cell/
-	make -C datatype/
+	make -C data_type/
 	make -C array/
-	make -C linkedlist/
+	make -C linked_list/
 
 test:
 	mkdir -p lib/
-	make -C memory_cell/ test-program
-	memory_cell/test-program
+	make -C memory_cell/ test_program
+	memory_cell/test_program
 
-	make -C array/ test-program
-	array/test-program
+	make -C array/ test_program
+	array/test_program
 	
-	make -C linkedlist/ test-program
-	linkedlist/test-program
+	make -C linked_list/ test_program
+	linked_list/test_program
 
 install: build
 	mkdir -p /usr/local/algorithms_and_data_structures

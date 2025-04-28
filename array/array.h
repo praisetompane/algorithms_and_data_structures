@@ -1,4 +1,4 @@
-#include "../datatype/datatype.h"
+#include "../data_type/data_type.h"
 
 #ifndef ARRAY_H
 #define ARRAY_H
@@ -11,7 +11,7 @@ typedef struct array
 {
     void *first_address;
     int length;
-    datatype type;
+    data_type type;
 } array;
 
 /*
@@ -20,7 +20,7 @@ typedef struct array
         @size = number of items to be stored
         type variable-name [size]
 */
-array new (datatype type, int size);
+array new (data_type type, int size);
 
 /*
     store a value in the collection

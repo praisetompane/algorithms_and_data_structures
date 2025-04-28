@@ -14,15 +14,15 @@ jobs:
       - name: build_memory_allocator
         run: |
           make -C memory_cell/
-      - name: build_datatype
+      - name: build_data_type
         run: |
-          make -C datatype/
+          make -C data_type/
       - name: build_array
         run: |
           make -C array/
-      - name: build_linkedlist
+      - name: build_linked_list
         run: |
-          make -C linkedlist/
+          make -C linked_list/
 
   test:
     runs-on: ubuntu-latest
@@ -33,19 +33,19 @@ jobs:
         run: mkdir -p lib/
       - name: test_memory_allocator
         run: |
-          make -C memory_cell/ test-program
+          make -C memory_cell/ test_program
           echo "Running tests"
-          memory_cell/test-program
-      - name: test_datatype
+          memory_cell/test_program
+      - name: test_data_type
         run: |
           echo "MISSING TESTS!!!"
       - name: test_array
         run: |
-          make -C array/ test-program
+          make -C array/ test_program
           echo "Running tests"
-          array/test-program
-      - name: test_linkedlist
+          array/test_program
+      - name: test_linked_list
         run: |
-          make -C linkedlist/ test-program
+          make -C linked_list/ test_program
           echo "Running tests"
-          linkedlist/test-program
+          linked_list/test_program

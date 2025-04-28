@@ -1,22 +1,22 @@
-#include "../datatype/datatype.h"
+#include "../data_type/data_type.h"
 #include "node.h"
 
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
+#ifndef LINKED_LIST_H
+#define LINKED_LIST_H
 
-typedef struct linkedlist
+typedef struct linked_list
 {  
     node *head;
     int length;
-    datatype type;
-} linkedlist; 
+    data_type type;
+} linked_list; 
 
 
 /*
     creates and returns a linked list for the specified
         @type = data type of values to store§3     #3
 */
-linkedlist new(datatype type);
+linked_list new(data_type type);
 
 /*
     add a node at the end of linked list
@@ -27,13 +27,13 @@ linkedlist new(datatype type);
                 create @newnode with @value
                 set current @currentnode->next to @newnode
 */
-void add(linkedlist *collection, void *value);
+void add(linked_list *collection, void *value);
 
 /*
     store an item at the top 
         @value = value to store
 */
-linkedlist add_to_top(void *value);
+linked_list add_to_top(void *value);
 
 
 /*
@@ -41,25 +41,25 @@ linkedlist add_to_top(void *value);
         @collection = collection to read from 
         @value = node to read
 */
-node read(linkedlist *collection, void *value);
+node read(linked_list *collection, void *value);
 
 /*
     read an item at the top 
         @collection = collection to read from 
         @value = node to read
 */
-node read_from_top(linkedlist *collection, void *value);
+node read_from_top(linked_list *collection, void *value);
 
 /*
     delete an item at the end 
         @collection = collection to read from 
         @value = node to read
 */
-node delete(linkedlist *collection, void *value);
+node delete(linked_list *collection, void *value);
 /*
     delete an item at the top 
         @collection = collection to read from 
         @value = node to read
 */
-node delete_from_top(linkedlist *collection, void *value);
+node delete_from_top(linked_list *collection, void *value);
 #endif

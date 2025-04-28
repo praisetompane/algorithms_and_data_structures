@@ -12,7 +12,7 @@
 - each data structure is an independent module.
     - example:
         - [array](./array/array.h)
-        - [linkedlist](./linkedlist/linkedlist.h)
+        - [linked_list](./linked_list/linked_list.h)
         - ...
 
 ## Dependencies

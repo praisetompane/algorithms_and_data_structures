@@ -1,7 +1,7 @@
 #include "../memory_cell/memory_allocator.h"
 #include "array.h"
 
-array new (datatype type, int size)
+array new (data_type type, int size)
 {
     array temp = {NULL, 0, type};
     switch (type)
@@ -46,7 +46,7 @@ array new (datatype type, int size)
 void add(array *collection, int index, void *value)
 {
     void *target_address = collection->first_address + index;
-    save_datatype(collection->type, value, target_address);
+    save_data_type(collection->type, value, target_address);
     collection->length += collection->length + 1;
 }
 

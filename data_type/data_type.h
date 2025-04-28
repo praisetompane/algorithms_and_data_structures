@@ -1,7 +1,7 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-typedef enum datatype
+typedef enum data_type
 {
     CHAR,
     SIGNED_CHAR,
@@ -14,7 +14,7 @@ typedef enum datatype
     FLOAT,
     DOUBLE,
     LONG_DOUBLE
-} datatype;
+} data_type;
 
 /*
     saves value at supplied memory address
@@ -22,6 +22,6 @@ typedef enum datatype
         @value = value to store
         @target_address = memory address to store the value
 */
-void save_datatype(datatype type, void *value, void *target_address);
+void save_data_type(data_type type, void *value, void *target_address);
 
 #endif
