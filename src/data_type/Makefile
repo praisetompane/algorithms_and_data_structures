@@ -1,7 +1,7 @@
 lib_data_type.a:
 	make data_type.o
 	ar rcs lib_data_type.a data_type.o
-	mv lib_data_type.a ../lib
+	mv lib_data_type.a ../../lib
 	make clean
 data_type.o: data_type.c data_type.h 
 	gcc -c data_type.c 
