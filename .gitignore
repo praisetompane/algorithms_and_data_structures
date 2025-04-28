@@ -50,16 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-<<<<<<< HEAD
-=======
 
 
 lib/
 
-test-program
-<<<<<<< HEAD
->>>>>>> 7cec222 (feat: add dev containers)
-=======
+test_program
 .DS_Store
 .vscode
->>>>>>> ac3ad98 (docs: clean up)
+accreditation/
+ecosystem/
+scratch_pad/
+journal/
+applications/
+
+.DS_Store

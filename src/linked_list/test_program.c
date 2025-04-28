@@ -1,12 +1,11 @@
-#include "linkedlist.h"
+#include "linked_list.h"
 #include <stdio.h>
 #include <assert.h>
 
-
 int main()
 {
-    printf("Test creating Integer linkedlist\n");
-    linkedlist numbers = new (INT);
+    printf("Test creating Integer linked_list\n");
+    linked_list numbers = new (INT);
     assert(numbers.head == NULL);
     assert(numbers.length == 0);
     assert(numbers.type == INT);

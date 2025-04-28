@@ -12,13 +12,13 @@ typedef struct node
 /*
     create a new node
 */
-node * newnode();
+node *newnode();
 
 /*
     create a new node
-        @value = value for node 
+        @value = value for node
         @next = the node's successor
 */
-node * newnode(void *value, node *next);
+node *newnode(void *value, node *next);
 
 #endif

@@ -1,4 +1,4 @@
-name: data_structures
+name: algorithms_and_data_structures
 
 on:
   push:
@@ -13,16 +13,16 @@ jobs:
       - uses: actions/checkout@v2
       - name: build_memory_allocator
         run: |
-          make -C memory_cell/
-      - name: build_datatype
+          make -C src/memory_cell/
+      - name: build_data_type
         run: |
-          make -C datatype/
+          make -C src/data_type/
       - name: build_array
         run: |
-          make -C array/
-      - name: build_linkedlist
+          make -C src/array/
+      - name: build_linked_list
         run: |
-          make -C linkedlist/
+          make -C src/linked_list/
 
   test:
     runs-on: ubuntu-latest
@@ -33,19 +33,19 @@ jobs:
         run: mkdir -p lib/
       - name: test_memory_allocator
         run: |
-          make -C memory_cell/ test-program
+          make -C src/memory_cell/ test_program
           echo "Running tests"
-          memory_cell/test-program
-      - name: test_datatype
+          src/memory_cell/test_program
+      - name: test_data_type
         run: |
           echo "MISSING TESTS!!!"
       - name: test_array
         run: |
-          make -C array/ test-program
+          make -C src/array/ test_program
           echo "Running tests"
-          array/test-program
-      - name: test_linkedlist
+          src/array/test_program
+      - name: test_linked_list
         run: |
-          make -C linkedlist/ test-program
+          make -C src/linked_list/ test_program
           echo "Running tests"
-          linkedlist/test-program
+          src/linked_list/test_program

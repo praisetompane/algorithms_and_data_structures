@@ -1,19 +1,15 @@
-# data_structures
-![build status](https://github.com/praisetompane/data_structures/actions/workflows/data_structures.yaml/badge.svg)
+# algorithms_and_data_structures
+![build status](https://github.com/praisetompane/algorithms_and_data_structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
 
 ## Objectives
-- Reimplementation of foundational data structures at a lower level of the stack.
-- Educational project to aquire a deeper understanding of these constructs.
+- Re-implement foundational data structures and algorithms at a lower level of the stack for educational purposes.
 
-## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms/0_data_structures_design_and_analysis)
 
 ## Project Structure
-- docs: project documentation lives in here.
-- each data structure is an independent module.
-    - example:
-        - [array](./array/array.h)
-        - [linkedlist](./linkedlist/linkedlist.h)
-        - ...
+- docs: Project documentation lives in here.
+- src: Each data structure is an independent module.
+
+## [Theory](https://github.com/praisetompane/computation_and_information/tree/main/0_theory_of_computation/4_design_and_analysis_of_algorithms/0_data_structures_design_and_analysis)
 
 ## Dependencies
 - [Docker](https://docs.docker.com/get-started/)
@@ -27,7 +23,7 @@
 
 #### Clone Repository
 ```shell
-git clone git@github.com:praisetompane/data_structures.git
+git clone git@github.com:praisetompane/algorithms_and_data_structures.git
 ```
 
 #### Build
@@ -40,12 +36,12 @@ make build
 make test
 ```
 
-#### Execute Installation Script 
+#### Install 
 ```
 sudo make install
 ```
 
-## Uninstall
+#### Uninstall
 ```
 sudo make uninstall
 ```

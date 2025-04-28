@@ -7,7 +7,7 @@ int main()
     printf("Test creating, adding and reading from Integer array\n");
     array numbers = new (INT, 10);
     assert(numbers.length == 0);
-    
+
     int number = 2;
     add(&numbers, 0, &number);
     assert(numbers.length == 01);
@@ -33,7 +33,7 @@ int main()
     printf("Test creating, adding and reading from Floats array\n");
     array stock_prices = new (FLOAT, 10);
     assert(stock_prices.length == 0);
-    
+
     float rmb_price = 122.34;
     add(&stock_prices, 0, &rmb_price);
     assert(stock_prices.length == 1);
