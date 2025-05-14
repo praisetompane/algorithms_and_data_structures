@@ -1,20 +1,20 @@
 #include "linked_list.h"
 #include <stdlib.h>
 
-linked_list new(data_type type)
+LinkedList linkedlist(DataType type)
 {
-    linked_list temp = {NULL, 0, type};
+    LinkedList temp = {NULL, 0, type};
     return temp;
 }
 
-void add(linked_list *collection, void *value)
+void add(LinkedList *collection, void *value)
 {
-    node *n = newnode(value, NULL);
+    Node *n = newnode(value, NULL);
     save_data_type(collection->type, value, n->value);
 
     if (collection->head != NULL)
     {
-        node *currentnode = collection->head;
+        Node *currentnode = collection->head;
         while (currentnode->next != NULL)
             currentnode = currentnode->next;
         currentnode->next = n;
@@ -27,11 +27,11 @@ void add(linked_list *collection, void *value)
     collection->length += 1;
 }
 
-void printlinked_list(linked_list collection)
+void print(LinkedList collection)
 {
     if (collection.head != NULL)
     {
-        node *currentnode = collection.head;
+        Node *currentnode = collection.head;
         while (currentnode->next != NULL)
         {
             printf("%d->", *(int *)currentnode->value);

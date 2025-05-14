@@ -5,7 +5,7 @@
 int main()
 {
     printf("Test creating Integer linked_list\n");
-    linked_list numbers = new (INT);
+    LinkedList numbers = linkedlist(INT);
     assert(numbers.head == NULL);
     assert(numbers.length == 0);
     assert(numbers.type == INT);
