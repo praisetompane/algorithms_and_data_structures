@@ -3,22 +3,22 @@
 #ifndef NODE_H
 #define NODE_H
 
-typedef struct node
+typedef struct Node
 {
     void *value;
-    struct node *next;
-} node;
+    struct Node *next;
+} Node;
 
 /*
     create a new node
 */
-node *newnode();
+Node *newnode();
 
 /*
     create a new node
         @value = value for node
         @next = the node's successor
 */
-node *newnode(void *value, node *next);
+Node *newnode(void *value, Node *next);
 
 #endif

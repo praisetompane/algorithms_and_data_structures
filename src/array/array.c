@@ -1,9 +1,9 @@
 #include "../memory_cell/memory_allocator.h"
 #include "array.h"
 
-array new(data_type type, int size)
+Array array(DataType type, int size)
 {
-    array temp = {NULL, 0, type};
+    Array temp = {NULL, 0, type};
     switch (type)
     {
     case CHAR:
@@ -43,14 +43,14 @@ array new(data_type type, int size)
     return temp;
 }
 
-void add(array *collection, int index, void *value)
+void add(Array *collection, int index, void *value)
 {
     void *target_address = collection->first_address + index;
     save_data_type(collection->type, value, target_address);
     collection->length += collection->length + 1;
 }
 
-void read(array *collection, int index, void *destination)
+void read(Array *collection, int index, void *destination)
 {
     void *targetAddress = collection->first_address + index;
     switch (collection->type)

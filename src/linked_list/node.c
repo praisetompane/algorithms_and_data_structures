@@ -1,9 +1,9 @@
 #include "../memory_cell/memory_allocator.h"
 #include "node.h"
 
-node *newnode(void *value, node *next)
+Node *newnode(void *value, Node *next)
 {
-    node *n = (node *)allocate_memory(sizeof(node));
+    Node *n = (Node *)allocate_memory(sizeof(Node));
     n->value = value;
     n->next = next;
     return n;

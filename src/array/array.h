@@ -4,23 +4,23 @@
 #define ARRAY_H
 
 /*
-    defined a type called 'struct array'
-    gave it an alias array
+    defined a type called 'struct Array'
+    gave it an alias Array
 */
-typedef struct array
+typedef struct Array
 {
     void *first_address;
     int length;
-    data_type type;
-} array;
+    DataType type;
+} Array;
 
 /*
-    creates and returns an array for the specified:
+    creates and returns an Array for the specified:
         @type = data type of values to store
         @size = number of items to be stored
         type variable-name [size]
 */
-array new(data_type type, int size);
+Array array(DataType type, int size);
 
 /*
     store a value in the collection
@@ -28,7 +28,7 @@ array new(data_type type, int size);
         @index = index to store the in
         @value = value to store
 */
-void add(array *collection, int index, void *value);
+void add(Array *collection, int index, void *value);
 
 /*
     read an item
@@ -37,6 +37,6 @@ void add(array *collection, int index, void *value);
         @*destination = pointer to memory address to read into
 */
 
-void read(array *collection, int index, void *destination);
+void read(Array *collection, int index, void *destination);
 
 #endif

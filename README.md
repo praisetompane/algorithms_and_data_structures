@@ -2,7 +2,7 @@
 ![build status](https://github.com/praisetompane/algorithms_and_data_structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
 
 ## Objectives
-- Re-implement foundational data structures and algorithms at a lower level of the stack for educational purposes.
+- Implement foundational data structures and algorithms at a lower level of the stack for educational purposes.
 
 
 ## Project Structure
@@ -51,22 +51,18 @@ sudo make uninstall
 ```C
 #include "array.h"
 #include <stdio.h>
-#include <assert.h>
 
 int main()
 {
-    printf("Test creating, adding and reading from Integer array\n");
-    array numbers = new (INT, 10);
-    assert(numbers.length == 0);
+    printf("Test creating, adding and reading from Integer Array\n");
+    Array numbers = array(INT, 10);
 
     int number = 2;
     add(&numbers, 0, &number);
 
     int read_int;
     read(&numbers, 0, &read_int);
-    assert(read_int == number);
     printf("\n");
-
 }
 ```
 
