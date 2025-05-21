@@ -2,7 +2,7 @@
 ![build status](https://github.com/praisetompane/algorithms_and_data_structures/actions/workflows/algorithms_and_data_structures.yaml/badge.svg)
 
 ## Objectives
-- Implement foundational data structures and algorithms at a lower level of the stack for educational purposes.
+- A toy implementation of foundational data structures and algorithms at a lower level of the stack.
 
 
 ## Project Structure
@@ -36,7 +36,7 @@ make build
 make test
 ```
 
-#### Install 
+#### Install
 ```
 sudo make install
 ```
