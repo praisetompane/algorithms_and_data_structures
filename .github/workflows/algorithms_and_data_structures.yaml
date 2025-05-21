@@ -13,10 +13,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: build_memory_allocator
         run: |
-          make -C src/memory_cell/
-      - name: build_data_type
+          make -C src/memory/
+      - name: build_type
         run: |
-          make -C src/data_type/
+          make -C src/type/
       - name: build_array
         run: |
           make -C src/array/
@@ -33,10 +33,10 @@ jobs:
         run: mkdir -p lib/
       - name: test_memory_allocator
         run: |
-          make -C src/memory_cell/ test_program
+          make -C src/memory/ test_program
           echo "Running tests"
-          src/memory_cell/test_program
-      - name: test_data_type
+          src/memory/test_program
+      - name: test_type
         run: |
           echo "MISSING TESTS!!!"
       - name: test_array

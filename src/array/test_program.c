@@ -17,7 +17,7 @@ int main()
     read(&numbers, 0, &read_int);
     assert(read_int == number);
     printf("\n");
-    free(numbers.first_address);
+    free(numbers.head);
 
     printf("Test creating, adding and reading from Character Array\n");
     Array alphabets = array(CHAR, 10);
@@ -31,7 +31,7 @@ int main()
     read(&alphabets, 0, &read_char);
     assert(read_char == letter);
     printf("\n");
-    free(alphabets.first_address);
+    free(alphabets.head);
 
     printf("Test creating, adding and reading from Floats Array\n");
     Array stock_prices = array(FLOAT, 10);
@@ -45,7 +45,7 @@ int main()
     read(&stock_prices, 0, &read_float);
     assert(read_float == rmb_price);
     printf("\n");
-    free(stock_prices.first_address);
+    free(stock_prices.head);
 
     return 0;
 }
