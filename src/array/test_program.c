@@ -27,6 +27,10 @@ int main()
     add(&alphabets, 0, &letter);
     assert(alphabets.length == 1);
 
+    letter = 'B';
+    add(&alphabets, 0, &letter);
+    assert(alphabets.length == 2);
+
     char read_char;
     read(&alphabets, 0, &read_char);
     assert(read_char == letter);

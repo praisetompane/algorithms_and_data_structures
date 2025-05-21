@@ -47,7 +47,7 @@ void add(Array *collection, int index, void *value)
 {
     void *target_address = collection->head + index;
     save_data(collection->type, value, target_address);
-    collection->length += collection->length + 1;
+    collection->length += 1;
 }
 
 void read(Array *collection, int index, void *destination)
