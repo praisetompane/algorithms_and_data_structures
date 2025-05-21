@@ -4,14 +4,14 @@ lib_array.a:
 	mv lib_array.a ../../lib
 	make clean
 
-array.o: array.c array.h ../data_type/data_type.h ../memory_cell/memory_allocator.c
-	gcc -c array.c ../memory_cell/memory_allocator.c ../data_type/data_type.c
+array.o: array.c array.h ../type/type.h ../memory/memory_allocator.c
+	gcc -c array.c ../memory/memory_allocator.c ../type/type.c
 
 test_program:
-	make -C ../memory_cell
-	make -C ../data_type/
+	make -C ../memory
+	make -C ../type/
 	make lib_array.a
-	gcc test_program.c -o test_program -L. ../../lib/lib_array.a ../../lib/lib_memory_allocator.a ../../lib/lib_data_type.a
+	gcc test_program.c -o test_program -L. ../../lib/lib_array.a ../../lib/lib_memory_allocator.a ../../lib/lib_type.a
 
 clean:
 	rm -rf *.o

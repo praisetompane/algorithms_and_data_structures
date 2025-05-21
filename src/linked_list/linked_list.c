@@ -1,7 +1,7 @@
 #include "linked_list.h"
 #include <stdlib.h>
 
-LinkedList linkedlist(DataType type)
+LinkedList linkedlist(Type type)
 {
     LinkedList temp = {NULL, 0, type};
     return temp;
@@ -9,8 +9,8 @@ LinkedList linkedlist(DataType type)
 
 void add(LinkedList *collection, void *value)
 {
-    Node *n = newnode(value, NULL);
-    save_data_type(collection->type, value, n->value);
+    Node *n = node(value, NULL);
+    save_data(collection->type, value, n->value);
 
     if (collection->head != NULL)
     {
@@ -40,5 +40,7 @@ void print(LinkedList collection)
         printf("%d\n", *(int *)currentnode->value);
     }
     else
+    {
         printf("linked_list is empty");
+    }
 }

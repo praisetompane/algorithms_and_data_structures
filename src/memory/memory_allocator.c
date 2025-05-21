@@ -2,9 +2,9 @@
 
 void *allocate_memory(int size)
 {
-    void *first_address;
-    if ((first_address = malloc(size)) != NULL)
-        return first_address;
+    void *head;
+    if ((head = malloc(size)) != NULL)
+        return head;
     else
     {
         printf("Failed to allocate the requested memory.");

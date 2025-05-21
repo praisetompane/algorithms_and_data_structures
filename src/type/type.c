@@ -1,7 +1,7 @@
-#include "data_type.h"
+#include "type.h"
 #include <stdio.h>
 
-void save_data_type(DataType type, void *value, void *target_address)
+void save_data(Type type, void *value, void *target_address)
 {
     switch (type)
     {

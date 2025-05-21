@@ -1,43 +1,43 @@
-#include "../memory_cell/memory_allocator.h"
+#include "../memory/memory_allocator.h"
 #include "array.h"
 
-Array array(DataType type, int size)
+Array array(Type type, int size)
 {
     Array temp = {NULL, 0, type};
     switch (type)
     {
     case CHAR:
-        temp.first_address = (char *)allocate_memory((sizeof(char) * size));
+        temp.head = (char *)allocate_memory((sizeof(char) * size));
         break;
     case SIGNED_CHAR:
-        temp.first_address = (signed char *)allocate_memory((sizeof(signed char) * size));
+        temp.head = (signed char *)allocate_memory((sizeof(signed char) * size));
         break;
     case UNSIGNED_CHAR:
-        temp.first_address = (unsigned char *)allocate_memory((sizeof(unsigned char) * size));
+        temp.head = (unsigned char *)allocate_memory((sizeof(unsigned char) * size));
         break;
     case INT:
-        temp.first_address = (int *)allocate_memory((sizeof(int) * size));
+        temp.head = (int *)allocate_memory((sizeof(int) * size));
         break;
     case SHORT_INT:
-        temp.first_address = (short int *)allocate_memory((sizeof(short int) * size));
+        temp.head = (short int *)allocate_memory((sizeof(short int) * size));
         break;
     case LONG_INT:
-        temp.first_address = (long int *)allocate_memory((sizeof(long int) * size));
+        temp.head = (long int *)allocate_memory((sizeof(long int) * size));
         break;
     case SIGNED_INT:
-        temp.first_address = (signed int *)allocate_memory((sizeof(signed int) * size));
+        temp.head = (signed int *)allocate_memory((sizeof(signed int) * size));
         break;
     case UNSIGNED_INT:
-        temp.first_address = (unsigned int *)allocate_memory((sizeof(unsigned int) * size));
+        temp.head = (unsigned int *)allocate_memory((sizeof(unsigned int) * size));
         break;
     case FLOAT:
-        temp.first_address = (float *)allocate_memory((sizeof(float) * size));
+        temp.head = (float *)allocate_memory((sizeof(float) * size));
         break;
     case DOUBLE:
-        temp.first_address = (double *)allocate_memory((sizeof(double) * size));
+        temp.head = (double *)allocate_memory((sizeof(double) * size));
         break;
     case LONG_DOUBLE:
-        temp.first_address = (long double *)allocate_memory((sizeof(long double) * size));
+        temp.head = (long double *)allocate_memory((sizeof(long double) * size));
         break;
     }
     return temp;
@@ -45,14 +45,14 @@ Array array(DataType type, int size)
 
 void add(Array *collection, int index, void *value)
 {
-    void *target_address = collection->first_address + index;
-    save_data_type(collection->type, value, target_address);
+    void *target_address = collection->head + index;
+    save_data(collection->type, value, target_address);
     collection->length += collection->length + 1;
 }
 
 void read(Array *collection, int index, void *destination)
 {
-    void *targetAddress = collection->first_address + index;
+    void *targetAddress = collection->head + index;
     switch (collection->type)
     {
     case CHAR:

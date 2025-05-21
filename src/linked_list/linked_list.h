@@ -1,4 +1,4 @@
-#include "../data_type/data_type.h"
+#include "../type/type.h"
 #include "node.h"
 
 #ifndef LINKED_LIST_H
@@ -8,14 +8,14 @@ typedef struct LinkedList
 {
     Node *head;
     int length;
-    DataType type;
+    Type type;
 } LinkedList;
 
 /*
     creates and returns a linked list for the specified
         @type = data type of values to store§3     #3
 */
-LinkedList linkedlist(DataType type);
+LinkedList linkedlist(Type type);
 
 /*
     add a node at the end of linked list
@@ -23,8 +23,8 @@ LinkedList linkedlist(DataType type);
     flow:
         iterate list
             until, @currentnode->next is NULL
-                create @newnode with @value
-                set current @currentnode->next to @newnode
+                create @node with @value
+                set current @currentnode->next to @node
 */
 void add(LinkedList *collection, void *value);
 

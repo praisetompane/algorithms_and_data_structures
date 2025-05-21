@@ -1,4 +1,4 @@
-#include "../memory_cell/memory_allocator.h"
+#include "../memory/memory_allocator.h"
 
 #ifndef NODE_H
 #define NODE_H
@@ -12,13 +12,13 @@ typedef struct Node
 /*
     create a new node
 */
-Node *newnode();
+Node *node();
 
 /*
     create a new node
         @value = value for node
         @next = the node's successor
 */
-Node *newnode(void *value, Node *next);
+Node *node(void *value, Node *next);
 
 #endif
